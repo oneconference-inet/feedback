@@ -118,13 +118,12 @@ export default {
       if (this.page - 1 >= 1) this.page -= 1
       this.getDataPage()
     },
-    async getRoom () {
-      var room = await this.axios.post(
-        "http://localhost:9213/api/Histoy_rooms/search",
-        { meeting_id: this.test }
-      )
-      
-    }
+    // async getRoom () {
+    //   var room = await this.axios.post(
+    //     "http://localhost:9213/api/Histoy_rooms/search",
+    //     { meeting_id: this.test }
+    //   )
+    // }
   }
 }
 </script>
